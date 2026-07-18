@@ -6,8 +6,8 @@
 
 A concept homepage for a live repair-diagnosis platform — real-time AI triage, live technician matching, and a running impact ledger, built as a single responsive front end.
 
-[![Made with HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](#)
-[![Made with CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](#)
+[![Made with HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](#)
+[![Made with CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](#)
 [![Made with JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](#)
 [![No build step](https://img.shields.io/badge/build-none%20required-7A9467?style=flat)](#)
 [![Status](https://img.shields.io/badge/status-concept%20%2F%20front--end%20only-C1673D?style=flat)](#)
