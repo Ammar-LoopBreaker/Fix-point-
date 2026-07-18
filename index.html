@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FixPoint — Point your camera. Know if it's worth fixing.</title>
+<meta name="description" content="FixPoint pairs live AI diagnosis with real technicians and live parts availability, so you know in minutes whether to repair or replace.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#top" class="logo" aria-label="FixPoint home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 28 28" width="26" height="26">
+          <path d="M14 2 L4 8 V16 C4 21 8.5 25 14 26 C19.5 25 24 21 24 16 V8 Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M10 14 L12.5 14 L14 10 L15.5 18 L17 14 L18 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">FixPoint</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#matching">Technicians</a></li>
+        <li><a href="#impact">Impact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#cta" class="btn btn-primary btn-small">Start a diagnosis</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#matching">Technicians</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#cta">Start a diagnosis</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Live diagnosis &middot; Real technicians &middot; Live parts</p>
+        <h1 class="hero-title">Know if it's <em>worth fixing</em> in minutes.</h1>
+        <p class="hero-sub">Point your camera at whatever's broken. Our live diagnostic flags the likely fault, then matches you with a real technician and the parts to fix it — all in one session.</p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary">Start a diagnosis</a>
+          <a href="#how" class="btn btn-ghost">See how it works</a>
+        </div>
+        <p class="hero-note">No account needed to run a first diagnosis.</p>
+      </div>
+
+      <div class="scan-visual" role="img" aria-label="Animated diagnostic scan of a circuit board, highlighting a likely fault">
+        <div class="scan-line" aria-hidden="true"></div>
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <rect x="20" y="20" width="160" height="160" rx="8" fill="none" stroke="#6B5D4F" stroke-width="1.5"/>
+          <line x1="40" y1="20" x2="40" y2="50" stroke="#6B5D4F" stroke-width="1.5"/>
+          <line x1="70" y1="20" x2="70" y2="50" stroke="#6B5D4F" stroke-width="1.5"/>
+          <line x1="100" y1="20" x2="100" y2="50" stroke="#6B5D4F" stroke-width="1.5"/>
+          <rect x="35" y="50" width="70" height="30" rx="3" fill="none" stroke="#6B5D4F" stroke-width="1.5"/>
+          <circle cx="140" cy="65" r="18" fill="none" stroke="#6B5D4F" stroke-width="1.5"/>
+          <line x1="60" y1="100" x2="160" y2="100" stroke="#6B5D4F" stroke-width="1.5"/>
+          <line x1="60" y1="115" x2="160" y2="115" stroke="#6B5D4F" stroke-width="1.5"/>
+          <line x1="60" y1="130" x2="130" y2="130" stroke="#6B5D4F" stroke-width="1.5"/>
+          <rect x="35" y="145" width="130" height="20" rx="3" fill="none" stroke="#6B5D4F" stroke-width="1.5"/>
+          <circle class="fault-marker f1" cx="90" cy="63" r="3" />
+          <circle class="fault-marker f2" cx="140" cy="65" r="3" />
+          <circle class="fault-marker f3" cx="115" cy="115" r="3" />
+        </svg>
+        <div class="scan-caption">
+          <span>circuit_board_01.scan</span>
+          <span class="status">2 faults flagged</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IMPACT TICKER ============ -->
+  <section class="impact-strip" id="impact">
+    <div class="section-inner impact-grid">
+      <div class="impact-stat">
+        <div class="impact-number" data-count-to="18420" data-suffix="">0</div>
+        <div class="impact-label">Repairs completed</div>
+      </div>
+      <div class="impact-stat">
+        <div class="impact-number" data-count-to="94" data-suffix="t">0t</div>
+        <div class="impact-label">CO2 avoided</div>
+      </div>
+      <div class="impact-stat">
+        <div class="impact-number" data-count-to="61" data-suffix="t">0t</div>
+        <div class="impact-label">E-waste diverted</div>
+      </div>
+      <div class="impact-stat">
+        <div class="impact-number" data-count-to="2100000" data-suffix="" data-prefix="$">$0</div>
+        <div class="impact-label">Saved vs. replacement</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how">
+    <div class="section-inner">
+      <p class="section-label">How it works</p>
+      <h2 class="section-title">Three steps, one sitting</h2>
+
+      <ol class="how-list">
+        <li class="how-step">
+          <span class="how-index">01</span>
+          <div>
+            <h3>Scan</h3>
+            <p>Open a live video call and point your camera at the broken item. Our on-device model flags likely faults in real time as you move around it — no upload, no waiting for results.</p>
+          </div>
+        </li>
+        <li class="how-step">
+          <span class="how-index">02</span>
+          <div>
+            <h3>Match</h3>
+            <p>If the AI needs a second opinion, the call escalates instantly to an available technician nearby, who joins already seeing what was flagged — not starting from scratch.</p>
+          </div>
+        </li>
+        <li class="how-step">
+          <span class="how-index">03</span>
+          <div>
+            <h3>Fix</h3>
+            <p>Get a live parts price and stock comparison from local shops, book the repair, and track it step by step until it's done — and see exactly what that repair saved.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <p class="section-label">Built for real-time repair</p>
+      <h2 class="section-title">Not a guide library. A live workshop.</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-tag">Live</span>
+          <h3>AI-assisted video diagnosis</h3>
+          <p>Fault markers appear on your live camera feed as you scan the item, so triage takes minutes instead of a forum thread.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-tag">Live</span>
+          <h3>Parts availability aggregator</h3>
+          <p>Price and stock from local shops and salvage yards, updating in your browser the moment something sells out or drops in price.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-tag">Live</span>
+          <h3>Repair matching queue</h3>
+          <p>Watch technicians accept, decline, or go offline in real time, with a visible ETA instead of an email you hope gets answered.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-tag">Live</span>
+          <h3>Circular impact ledger</h3>
+          <p>Every completed repair updates a running total of CO2 avoided and money saved — for you, and for your local repair café.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-tag">Live</span>
+          <h3>Repair café capacity tracker</h3>
+          <p>Organizers see remaining slots by item type update live as people RSVP, with automatic waitlist promotion when a slot opens.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-tag">Live</span>
+          <h3>Mentorship streaming</h3>
+          <p>Experienced hobbyists livestream a repair with real-time Q&amp;A chat — a free, live alternative to a static tutorial video.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MATCHING PREVIEW ============ -->
+  <section class="matching" id="matching">
+    <div class="section-inner matching-inner">
+      <div class="matching-copy">
+        <p class="section-label">See it live</p>
+        <h2 class="section-title">Technicians, ranked by who's actually free</h2>
+        <p>No inbox, no waiting for a callback. The moment a diagnosis needs a human, nearby technicians appear ranked by specialty match and current load — and you watch their status change in real time.</p>
+        <a href="#cta" class="btn btn-ghost">Try the matching queue</a>
+      </div>
+
+      <div class="tech-list" aria-label="Example live technician queue">
+        <div class="tech-card tech-card--available">
+          <div class="tech-avatar" aria-hidden="true"></div>
+          <div class="tech-info">
+            <div class="tech-name">Marisol Ferreira</div>
+            <div class="tech-specialty">Small appliances &middot; 0.6 mi away</div>
+          </div>
+          <div class="tech-status">Available &middot; ~4 min</div>
+        </div>
+        <div class="tech-card tech-card--available">
+          <div class="tech-avatar" aria-hidden="true"></div>
+          <div class="tech-info">
+            <div class="tech-name">Desmond Cole</div>
+            <div class="tech-specialty">Phones &amp; laptops &middot; 1.1 mi away</div>
+          </div>
+          <div class="tech-status">Available &middot; ~9 min</div>
+        </div>
+        <div class="tech-card tech-card--busy">
+          <div class="tech-avatar" aria-hidden="true"></div>
+          <div class="tech-info">
+            <div class="tech-name">Ren Okafor</div>
+            <div class="tech-specialty">Circuit boards &middot; 1.8 mi away</div>
+          </div>
+          <div class="tech-status">On a call &middot; free in 12 min</div>
+        </div>
+        <div class="tech-card tech-card--offline">
+          <div class="tech-avatar" aria-hidden="true"></div>
+          <div class="tech-info">
+            <div class="tech-name">Alina Petrov</div>
+            <div class="tech-specialty">Power tools &middot; 2.3 mi away</div>
+          </div>
+          <div class="tech-status">Offline</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials">
+    <div class="section-inner">
+      <p class="section-label">From the community</p>
+      <h2 class="section-title">Repairs people almost gave up on</h2>
+
+      <div class="testimonial-grid">
+        <figure class="testimonial-card">
+          <blockquote>The scan flagged a swollen capacitor before I even finished explaining what was wrong. The technician had already ordered the part by the time we hung up.</blockquote>
+          <figcaption>
+            <span class="t-name">Jordan Achebe</span>
+            <span class="t-role">Fixed a dead monitor</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote>I run a monthly repair café and used to turn people away by 11am. The capacity tracker means nobody shows up to a full room anymore.</blockquote>
+          <figcaption>
+            <span class="t-name">Sofia Lindqvist</span>
+            <span class="t-role">Organizer, Riverside Repair Café</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote>Seeing the running total of what I've kept out of landfill changed how I think about buying new. It's not abstract anymore, it's a number.</blockquote>
+          <figcaption>
+            <span class="t-name">Marcus Webb</span>
+            <span class="t-role">FixPoint member since 2025</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" id="cta">
+    <div class="section-inner">
+      <div class="cta-inner">
+        <h2>Point your camera. Find out in minutes.</h2>
+        <p>Free to run your first diagnosis — no account, no commitment. See what's actually wrong before you decide what to do about it.</p>
+        <div class="cta-actions">
+          <a href="#top" class="btn btn-primary">Start a diagnosis</a>
+          <a href="#how" class="btn btn-ghost">Learn how it works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <a href="#top" class="logo" aria-label="FixPoint home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 28 28" width="22" height="22">
+          <path d="M14 2 L4 8 V16 C4 21 8.5 25 14 26 C19.5 25 24 21 24 16 V8 Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M10 14 L12.5 14 L14 10 L15.5 18 L17 14 L18 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">FixPoint</span>
+    </a>
+
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="mailto:hello@fixpoint.app">hello@fixpoint.app</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#cta">Start a diagnosis</a></li>
+      </ul>
+    </nav>
+
+    <p class="footer-copy">&copy; 2026 FixPoint. Built to be fixed, not replaced.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
